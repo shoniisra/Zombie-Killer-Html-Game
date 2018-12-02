@@ -1,0 +1,51 @@
+<!-- Developed by: Johnny Villacís
+License:MIT
+2018 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Frutas </title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <audio id="fondo" src="audio/fondo.wav" autoplay loop>
+    </audio>
+    <audio id="slicesound">
+        <source src="audio/sound.wav">
+        <!-- <source src="audio/sound.ogg"> -->
+    </audio>
+    <audio id="rugidosound">
+        <source src="audio/rugido.wav">
+        <!-- <source src="audio/sound.ogg"> -->
+    </audio>
+    <div id="container">
+        <div id="leftdiv">
+                <a id="play" ><img id="sound_icon" src="audio/no-audio.png" border="0"></a>
+                <div id="trialsLeft"></div>
+        </div>
+        <div id="fruitsContainer">
+            <img id="fruit1" class="fruit" >
+        </div>
+        <div id="rightdiv">
+            <div id="startreset">Iniciar Juego</div>
+            <div id="score">Puntaje: <span id="scorevalue">0</span></div>
+        </div>
+        <div id="gameover">
+            <img id="fail_icon" src="images/fail.gif" border="0">
+                <div id="puntaje" width="10%">                
+                </div>
+        </div>
+
+    </div>    
+    
+    
+   
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+    </script>
+    <script src="jquery.js"></script>
+</body>
+</html>

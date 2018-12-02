@@ -1,0 +1,199 @@
+ /* Developed by: Johnny Villacís
+License:MIT
+2018 */
+html{
+    height: 100%;
+}
+body{
+    background: url("images/back.png") no-repeat center center fixed;
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    position: static;
+}
+
+/* left elements-------------------------------------------------------------------------------- */
+#leftdiv{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    left: 3%;
+    top: 5%;
+}
+#play{
+    width: 100%;
+    height: 25%;
+    cursor: pointer;    
+}
+#sound_icon{
+    width: 55%;
+    height: 20%;
+}
+#trialsLeft {
+    width: 100%;
+    height: 65%;
+    margin-top: 35%;
+    /* padding: 20px; */
+}
+.life{
+    width: 40%;
+    height: 20%;
+    margin: 0 5px;
+    margin-right: 20%
+    
+}
+
+/* right elements----------------------------------------------------------------------------- */
+#rightdiv{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    left: 78%;
+    top: 5%;
+}
+#startreset {
+    width: 65%;
+    padding: 5%;
+    margin: 0 auto;
+    
+    background-color: rgba(71, 66, 66, 0.5);
+    color: rgb(125, 137, 241);
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    border-radius: 3px;
+
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+#score {
+    width: 65%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 10%;
+    
+    background-color: rgb(119, 0, 255);
+    color: #fff;
+    box-shadow: 0px 1px rgba(34, 2, 2, 0.863);
+
+    text-align: center;
+    font-size: 25px;
+    position: relative; 
+}
+
+
+/* center elements-------------------------- */
+#fruitsContainer {
+    background-image: url("images/calle.jpg");
+    background-repeat: no-repeat;
+    background-origin: center;
+    background-position: fixed;
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+    
+    border-style: solid;
+    border-width: 7px;
+    border-color: #dad8f777;
+    
+    width: 60%;
+    height: 90%;
+    top: 5%;
+    left: 16.3%;
+    margin: 0px auto 0px ;
+    position: fixed;
+    overflow: hidden;
+}
+img{
+    width: 15%;
+    height: 10%;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
+
+/* Gameover message............................................................. */
+
+#gameover {
+    position: fixed;
+    z-index: 2;
+    display: none;
+    top: 15%;
+    left: 30%;
+    height: 50%;
+    width: 40%;
+
+    border-radius: 5%;
+    background: linear-gradient(rgb(71, 4, 57), rgb(36, 25, 33));
+    /* background: -webkit-linear-gradient(rgb(241, 0, 0), rgb(105, 12, 8));
+    background: -o-linear-gradient(rgb(70, 12, 12), rgb(97, 20, 18));
+    background: -moz-linear-gradient(rgb(245, 72, 19), rgb(197, 31, 25)); */
+    
+    color: rgb(255, 255, 255);
+    font-family: Eleplant;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#fail_icon{
+    width: 95%;
+    height: 85%;
+    margin-top: 2%;
+    border-radius: 5%;
+}
+#puntaje {
+    width: 92%;
+    /* border-radius: 5%; */
+    height: 15%;
+    padding: 4%;
+    margin: 0 auto;
+    margin-top: 5%;
+    
+    background-color: rgb(119, 0, 255);
+    color: #fff;
+    box-shadow: 0px 1px rgba(34, 2, 2, 0.863);
+
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;  cursor: pointer;
+}
+
+#reestart {
+    width: 65%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 10%;
+
+    top: 20%;
+    left: 65%;
+    position: fixed;
+    
+    background-color: rgba(71, 66, 66, 0.5);
+    color: rgb(125, 137, 241);
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    border-radius: 3px;
+
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    /* position: relative; */
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}

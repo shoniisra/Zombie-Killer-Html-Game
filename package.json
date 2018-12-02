@@ -1,0 +1,18 @@
+{
+  "name": "zombiekiller",
+  "version": "1.0.0",
+  "description": "simple html javascript css game like fruit ninja",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "easy",
+    "simple",
+    "html",
+    "javascript"
+  ],
+  "author": "Johnny Villacis",
+  "license": "MIT"
+}
